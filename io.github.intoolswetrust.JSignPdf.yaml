@@ -27,6 +27,8 @@ cleanup:
 
 modules:
   - name: pcsc-lite
+    # pcsc-lite 2.4+ is Meson-only; the autotools build is gone.
+    buildsystem: meson
     cleanup:
       - /bin
       - /lib/pkgconfig
@@ -35,12 +37,12 @@ modules:
       - /sbin
     sources:
       - type: archive
-        url: https://pcsclite.apdu.fr/files/pcsc-lite-2.3.0.tar.xz
-        sha256: 1acca22d2891d43ffe6d782740d32e78150d4fcc99e8a3cc763abaf546060d3d
+        url: https://pcsclite.apdu.fr/files/pcsc-lite-2.5.1.tar.xz
+        sha256: bfcfe38a20afc49849c6bf55325e38f449fc4b26d3923fdc32b969ae41a8741b
     config-opts:
-      - --disable-static
-      - --disable-libsystemd
-      - --disable-polkit
+      - -Ddefault_library=shared
+      - -Dlibsystemd=false
+      - -Dpolkit=false
 
   - name: opensc
     sources:
@@ -64,10 +66,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/intoolswetrust/jsignpdf/archive/refs/tags/JSignPdf_3_0_1.tar.gz
-        sha256: 03bc4badc40e0ee73ce34bbe18fb4797ce9f3a6d74de2e579fbf41ffad6495bc
-      - type: patch
-        path: upgrade-javafx-to-21.0.11.patch
+        url: https://github.com/intoolswetrust/jsignpdf/archive/refs/tags/JSignPdf_3_1_0.tar.gz
+        sha256: ec7858fbced0bbddcb4b44ff2e518748cc97b82f273815bb9e34779c1f478310
       - maven-dependencies.json
     build-commands:
       - |
@@ -78,9 +78,9 @@ modules:
           -Dmaven.javadoc.skip=true \
           -Dmaven.source.skip=true \
           -Dasciidoctor.skip=true
-      - unzip -o distribution/target/jsignpdf-*.zip -d distro
+      - unzip -o distribution/target/jsignpdf-*-full.zip -d distro
       - mkdir -p ${FLATPAK_DEST}/share/jsignpdf
-      - cp -r distro/jsignpdf-*/JSignPdf.jar distro/jsignpdf-*/InstallCert.jar distro/jsignpdf-*/licenses ${FLATPAK_DEST}/share/jsignpdf/
+      - cp -r distro/jsignpdf-*/lib distro/jsignpdf-*/licenses ${FLATPAK_DEST}/share/jsignpdf/
       - install -Dm755 distribution/linux/flatpak/jsignpdf-flatpak.in ${FLATPAK_DEST}/bin/jsignpdf
       - install -Dm644 distribution/linux/jsignpdf.desktop ${FLATPAK_DEST}/share/applications/io.github.intoolswetrust.JSignPdf.desktop
       - install -Dm644 distribution/linux/io.github.intoolswetrust.JSignPdf.metainfo.xml ${FLATPAK_DEST}/share/metainfo/io.github.intoolswetrust.JSignPdf.metainfo.xml
