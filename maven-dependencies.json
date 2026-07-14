@@ -71,6 +71,20 @@
   },
   {
     "type": "file",
+    "url": "https://repo1.maven.org/maven2/com/aayushatharva/brotli4j/native-linux-aarch64/1.23.0/native-linux-aarch64-1.23.0.jar",
+    "sha256": "900c73dac7330ebe966071c770d2d4357c4de3f9417262ed4408dc08f2b573b6",
+    "dest": "m2local/com/aayushatharva/brotli4j/native-linux-aarch64/1.23.0",
+    "dest-filename": "native-linux-aarch64-1.23.0.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo1.maven.org/maven2/com/aayushatharva/brotli4j/native-linux-aarch64/1.23.0/native-linux-aarch64-1.23.0.pom",
+    "sha256": "4448378836320c50909c7770435c0c3bdafb60bb7d255359e468104a59f695fc",
+    "dest": "m2local/com/aayushatharva/brotli4j/native-linux-aarch64/1.23.0",
+    "dest-filename": "native-linux-aarch64-1.23.0.pom"
+  },
+  {
+    "type": "file",
     "url": "https://repo1.maven.org/maven2/com/aayushatharva/brotli4j/natives/1.23.0/natives-1.23.0.pom",
     "sha256": "23898979556d84dcf92a497911c985c8e6f8756c6b33b7a46be9ab00e8ce13d1",
     "dest": "m2local/com/aayushatharva/brotli4j/natives/1.23.0",
