@@ -6378,6 +6378,13 @@
   },
   {
     "type": "file",
+    "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-base/21.0.11/javafx-base-21.0.11-linux-aarch64.jar",
+    "sha256": "e7d5043b8852eeaba9b544563ce42914384983028e02b401c54ebeb32565866b",
+    "dest": "m2local/org/openjfx/javafx-base/21.0.11",
+    "dest-filename": "javafx-base-21.0.11-linux-aarch64.jar"
+  },
+  {
+    "type": "file",
     "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.11/javafx-controls-21.0.11.jar",
     "sha256": "da942005621630c85d8d271303c97bde17c94082e68b4e4539c71ca273ab6e36",
     "dest": "m2local/org/openjfx/javafx-controls/21.0.11",
@@ -6417,6 +6424,13 @@
     "sha256": "9ecd53bc4faff6895812373952dc0fda2dd54f77046cd04fccd10d49fe3b3799",
     "dest": "m2local/org/openjfx/javafx-controls/21.0.11",
     "dest-filename": "javafx-controls-21.0.11-win.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.11/javafx-controls-21.0.11-linux-aarch64.jar",
+    "sha256": "2d81779001a3fa78c1676af3388aac3e91a2c4a875230cc0d596fc9b66549049",
+    "dest": "m2local/org/openjfx/javafx-controls/21.0.11",
+    "dest-filename": "javafx-controls-21.0.11-linux-aarch64.jar"
   },
   {
     "type": "file",
@@ -6462,6 +6476,13 @@
   },
   {
     "type": "file",
+    "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-fxml/21.0.11/javafx-fxml-21.0.11-linux-aarch64.jar",
+    "sha256": "6bb82779476ca504a2f3e4fe25c4d68569d25951563562bcf2ae801f5a07cf45",
+    "dest": "m2local/org/openjfx/javafx-fxml/21.0.11",
+    "dest-filename": "javafx-fxml-21.0.11-linux-aarch64.jar"
+  },
+  {
+    "type": "file",
     "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-graphics/21.0.11/javafx-graphics-21.0.11.jar",
     "sha256": "4862f9d455839de88eeb3be4ca6d7c7287f5abb9204d50dda2904bdfa520edc6",
     "dest": "m2local/org/openjfx/javafx-graphics/21.0.11",
@@ -6504,6 +6525,13 @@
   },
   {
     "type": "file",
+    "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-graphics/21.0.11/javafx-graphics-21.0.11-linux-aarch64.jar",
+    "sha256": "5af12d933f0aa3d7508ad1980f8e5dd2f2dff34b9bfc873cbd3d6cff5a552b2c",
+    "dest": "m2local/org/openjfx/javafx-graphics/21.0.11",
+    "dest-filename": "javafx-graphics-21.0.11-linux-aarch64.jar"
+  },
+  {
+    "type": "file",
     "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-swing/21.0.11/javafx-swing-21.0.11.jar",
     "sha256": "37daa61e311fd417842e20601e00c7c8b251ddda60029cd971f48fd3e346fd32",
     "dest": "m2local/org/openjfx/javafx-swing/21.0.11",
@@ -6543,6 +6571,13 @@
     "sha256": "fd295f088e983a247b20fb7f500e39da0490387bd86726d5e6c2bd5caf58cbf2",
     "dest": "m2local/org/openjfx/javafx-swing/21.0.11",
     "dest-filename": "javafx-swing-21.0.11-win.jar"
+  },
+  {
+    "type": "file",
+    "url": "https://repo1.maven.org/maven2/org/openjfx/javafx-swing/21.0.11/javafx-swing-21.0.11-linux-aarch64.jar",
+    "sha256": "257e9601da30941b9d5fee89af5b3dd22de63618268976534ccc488b361621d8",
+    "dest": "m2local/org/openjfx/javafx-swing/21.0.11",
+    "dest-filename": "javafx-swing-21.0.11-linux-aarch64.jar"
   },
   {
     "type": "file",
