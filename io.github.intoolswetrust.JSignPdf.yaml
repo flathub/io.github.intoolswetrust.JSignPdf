@@ -70,8 +70,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/intoolswetrust/jsignpdf/archive/refs/tags/JSignPdf_3_1_0.tar.gz
-        sha256: ec7858fbced0bbddcb4b44ff2e518748cc97b82f273815bb9e34779c1f478310
+        url: https://github.com/intoolswetrust/jsignpdf/archive/refs/tags/JSignPdf_3_2_0.tar.gz
+        sha256: 6adbb43c35a2a0c8ea93c6bdbc09cf1c7e072fb4375a4094f01c7c9b9d05cce8
       - maven-dependencies.json
     build-commands:
       - |
